@@ -6,7 +6,7 @@ import './Navbar.css'
 const Navbar = () => {
     const navigate = useNavigate();
   return (
-    <div className='  flex justify-between py-4 bg-pink-500 text-black  '>
+    <div className='  flex justify-between py-4  bg-teal-800 text-black  '>
 <div className=' flex '> 
  <li on onClick={()=>{
 
