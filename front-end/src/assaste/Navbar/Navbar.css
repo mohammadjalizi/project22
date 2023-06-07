@@ -1,0 +1,6 @@
+li:hover{
+    color: cyan;
+    box-shadow: 0 0 5px cyan;
+    border-radius: 5px;
+
+}

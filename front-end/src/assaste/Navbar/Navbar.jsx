@@ -1,5 +1,8 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom";
+
+import './Navbar.css'
+
 const Navbar = () => {
     const navigate = useNavigate();
   return (
@@ -10,12 +13,12 @@ const Navbar = () => {
 navigate('/home')
 
  }}>home</li>
- <li>about</li>
- <li onClick={()=>{
+ <li  onClick={() => {
+   navigate('/store')
+ }
+ }>about</li>
 
-navigate("/store")
-
- }}>  store  </li>
+ <li> store  </li>
  <li></li>
  </div>   
  <h1>mohammadjal</h1>      

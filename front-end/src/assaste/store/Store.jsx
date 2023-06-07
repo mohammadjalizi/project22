@@ -1,6 +1,9 @@
 import React from 'react'
+import { useGetProductsnByNameQuery } from '../../redux/ProdutsApi'
 
 const Store = () => {
+  const { data, error, isLoading } = useGetProductsnByNameQuery('')
+
   return (
     <div className=' flex flex-wrap justify-center    '>
 

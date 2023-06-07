@@ -14,13 +14,14 @@ import Header from './assaste/Header/Header';
 import Store from './assaste/store/Store';
 
 
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Root />}>
  
       <Route path="/home" element={<Header />} />
      
-      <Route path="/store" element={<Store />} />
+      <Route path="/store" element={<   Store/>} />
     </Route>
   )
 );
