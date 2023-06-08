@@ -1,5 +1,15 @@
-.Card{
 
+.Card{
+transition: 0.8s;
+
+
+
+}
+
+.Card:hover{
+ 
+    background-color: aqua;
+    padding: 10px;
 
 
 }

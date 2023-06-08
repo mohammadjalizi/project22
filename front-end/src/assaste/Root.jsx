@@ -15,7 +15,7 @@ const Root = () => {
 <Navbar/>
 
 
-<div className='  bg-slate-300   h-96  mb-44 '>
+<div className='   h-96  mb-44 '>
 
 
 <Outlet/>
