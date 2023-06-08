@@ -8,6 +8,15 @@ const receviedDateFromAPI = [{}, {}, {}, {}];
 const Store = () => {
   const { data, error, isLoading } = useGetproductsByNameQuery();
 console.log(data)
+if(isLoading){
+
+return(
+<div className="loader"></div>
+
+)
+
+
+}
   if(data){
 
 
