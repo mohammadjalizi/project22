@@ -3,10 +3,12 @@ import { configureStore } from '@reduxjs/toolkit'
 import { setupListeners } from '@reduxjs/toolkit/query'
 import { productsApi } from './ProdutsApi'
 
+import MyData from './MyData'
+
 
 export const store = configureStore({
   reducer: {
-    // Add the generated reducer as a specific top-level slice
+    counter: MyData,
     [productsApi.reducerPath]: productsApi.reducer,
   },
   // Adding the api middleware enables caching, invalidation, polling,
