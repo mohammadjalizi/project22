@@ -10,8 +10,10 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Root from './assaste/Root';
-import Header from './assaste/Header/Header';
-import Store from './assaste/store/Store';
+
+
+import Home from './assaste/Header/Home';
+import Store from './assaste/Store/Store';
 
 
 
@@ -19,9 +21,9 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Root />}>
  
-      <Route path="/home" element={<Header />} />
+      <Route path="/home" element={<Home />} />
      
-      <Route path="/store" element={<   Store/>} />
+      <Route path="/store" element={< Store/>} />
     </Route>
   )
 );

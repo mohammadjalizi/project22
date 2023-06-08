@@ -12,11 +12,12 @@ const Navbar = () => {
 
 navigate('/home')
 
- }}>home</li>
+ }}>خانه</li>
+ 
  <li  onClick={() => {
    navigate('/store')
  }
- }>about</li>
+ }>فروشگاه</li>
 
  <li> store  </li>
  <li></li>
