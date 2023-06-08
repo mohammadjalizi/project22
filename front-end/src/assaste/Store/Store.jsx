@@ -1,12 +1,17 @@
 import React from 'react'
 
 import './Srote.css'
+import { useSelector, useDispatch } from 'react-redux'
 
 import { useGetproductsByNameQuery } from '../../redux/ProdutsApi'
 const receviedDateFromAPI = [{}, {}, {}, {}];
 
 const Store = () => {
   const { data, error, isLoading } = useGetproductsByNameQuery();
+
+  const {selectorproducts} = useSelector((state) => state.counter)
+
+
 console.log(data)
 if(isLoading){
 
