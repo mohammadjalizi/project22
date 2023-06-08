@@ -1,5 +1,6 @@
 import React from 'react'
 
+import './Srote.css'
 
 import { useGetproductsByNameQuery } from '../../redux/ProdutsApi'
 const receviedDateFromAPI = [{}, {}, {}, {}];
@@ -16,9 +17,16 @@ console.log(data)
   
   {data.map((item) => {
           return (
-            <div className='  shadow-2x  bg-slate-200   w-96  text-center my-12   '>
+            <div className=' Card shadow-2x     w-96  text-center my-12   '>
             <h1>{item.productName}</h1>
             <img src={item.imageLink} alt="" />
+
+            <div className='  pb-3 mt-14 flex justify-between'>
+
+              <button>AddtoCart</button>
+<p>   {item.price}   </p>
+
+              </div>
   
             
             </div>
