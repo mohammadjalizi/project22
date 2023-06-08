@@ -14,6 +14,7 @@ import Root from './assaste/Root';
 
 import Home from './assaste/Header/Home';
 import Store from './assaste/Store/Store';
+import Cart from './assaste/cart/Cart';
 
 
 
@@ -24,6 +25,7 @@ const router = createBrowserRouter(
       <Route path="/home" element={<Home />} />
      
       <Route path="/store" element={< Store/>} />
+      <Route path="/cart" element={< Cart/>} />
     </Route>
   )
 );

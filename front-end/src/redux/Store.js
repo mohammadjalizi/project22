@@ -3,12 +3,12 @@ import { configureStore } from '@reduxjs/toolkit'
 import { setupListeners } from '@reduxjs/toolkit/query'
 import { productsApi } from './ProdutsApi'
 
-import MyData from './MyData'
+import counterReducer from './MyData'
 
 
 export const store = configureStore({
   reducer: {
-    counter: MyData,
+    counter: counterReducer,
     [productsApi.reducerPath]: productsApi.reducer,
   },
   // Adding the api middleware enables caching, invalidation, polling,

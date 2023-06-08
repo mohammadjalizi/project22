@@ -12,7 +12,8 @@ const Store = () => {
   const {selectorproducts} = useSelector((state) => state.counter)
 
 
-console.log(data)
+
+console.log(selectorproducts)
 if(isLoading){
 
 return(
@@ -31,7 +32,7 @@ return(
   
   {data.map((item) => {
           return (
-            <div className=' Card shadow-2x     w-96  text-center my-12   '>
+            <div key={item.id} className=' Card shadow-2x     w-96  text-center my-12   '>
             <h1>{item.productName}</h1>
             <img src={item.imageLink} alt="" />
 
