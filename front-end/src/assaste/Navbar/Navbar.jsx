@@ -23,7 +23,11 @@ navigate('/home')
  <li></li>
  </div>   
  <div className='   w-44 py-4 flex justify-between '>
- <h2>cart</h2>  
+ <h2  onClick={()=>{
+
+navigate('/cart')
+
+ }}  className=' text-2xl cursor-pointer hover:text-cyan-300 '>cart</h2>  
  <h1>mohammadjal</h1>    
 
 
