@@ -2,14 +2,14 @@ import React from 'react'
 
 import './Srote.css'
 
-
+import { useSelector, useDispatch } from 'react-redux'
 import { useGetproductsByNameQuery } from '../../redux/ProdutsApi'
 
 
 const Store = () => {
   const { data, error, isLoading } = useGetproductsByNameQuery();
 
- 
+  const dispatch = useDispatch()
 
 
 
@@ -38,7 +38,10 @@ return(
 
             <div className='  pb-3 mt-14 flex justify-between'>
 
-              <button>AddtoCart</button>
+              <button onClick={() => {
+                
+              }
+              }>AddtoCart</button>
 <p>   {item.price}   </p>
 
               </div>
