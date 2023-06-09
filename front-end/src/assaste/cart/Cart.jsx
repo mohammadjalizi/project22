@@ -18,7 +18,7 @@ return(
 <div className=' flex justify-between bg-pink-300 shadow-2xl   my-36  m-auto '>
 
 
-<h1>{item.id}</h1>
+<h1>{item.id  }</h1>
 <h2>{item.price}</h2>
 <img  className=' max-w-xs '  src={item.imageLink} alt="" />
 <div  className=' ml-48 '>
@@ -26,6 +26,7 @@ return(
   dispatch(increaseProduct())
 }
 } className= ' m-10  text-3xl '> +</button>
+<h1> {item.quntity}  </h1>
 <button onClick={(() => {
   dispatch(decreaseProduct())
 }
