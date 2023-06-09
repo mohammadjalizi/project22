@@ -16,8 +16,9 @@ export const counterSlice = createSlice({
 
  
     AddtoCart: (state, action) => {
+      const productWithQuntit={...action.payload,"quntity":1}
  
-state.selectorproducts.push(action.payload)
+state.selectorproducts.push(productWithQuntit)
 
     },
     increaseProduct: (state, action) => {
