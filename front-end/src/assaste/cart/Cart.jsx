@@ -1,9 +1,11 @@
 import React from 'react'
  
 import { useSelector, useDispatch } from 'react-redux'
+import { decreaseProduct, increaseProduct } from 'redux/MyData'
 const data=[{},{},{}]
 const Cart = () => {
     const {selectorproducts} = useSelector((state) => state.counter)
+    const dispatch = useDispatch()
     console.log(selectorproducts)
   return (
 
@@ -20,8 +22,14 @@ return(
 <h2>{item.price}</h2>
 <img  className=' max-w-xs '  src={item.imageLink} alt="" />
 <div  className=' ml-48 '>
-<button className= ' m-10  text-3xl '> +</button>
-<button className='text-3xl'>-</button>
+<button   onClick={() => {
+  dispatch(increaseProduct())
+}
+} className= ' m-10  text-3xl '> +</button>
+<button onClick={(() => {
+  dispatch(decreaseProduct())
+}
+)} className='text-3xl'>-</button>
     </div>
 </div>
 

@@ -40,7 +40,7 @@ return(
             <div className='  pb-3 mt-14 flex justify-between'>
 
               <button onClick={() => {
-                dispatch(AddtoCart(1))
+                dispatch(AddtoCart(item))
               }
               }>AddtoCart</button>
 <p>   {item.price}   </p>

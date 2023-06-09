@@ -31,18 +31,21 @@ export const counterSlice = createSlice({
 
  
     AddtoCart: (state, action) => {
+      console.log("doneee")
     //   state.value += action.payload
     },
     increaseProduct: (state, action) => {
         // state.value += action.payload
+        console.log("doneeee")
       },
     decreaseProduct: (state, action) => {
         // state.value += action.payload
+        console.log("doneeee")
       },
   },
   
 },)
 // Action creators are generated for each case reducer function
-export const {  AddtoCart,increaseProduct, } = counterSlice.actions
+export const { decreaseProduct, AddtoCart,increaseProduct, } = counterSlice.actions
 
 export default counterSlice.reducer
