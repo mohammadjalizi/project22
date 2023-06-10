@@ -15,7 +15,7 @@ const Cart = () => {
 
 return(
 
-<div className=' flex justify-between bg-pink-300 shadow-2xl   my-36  m-auto '>
+<div key={item.price} className=' flex justify-between bg-pink-300 shadow-2xl   my-36  m-auto '>
 
 
 <h1>{item.id  }</h1>
