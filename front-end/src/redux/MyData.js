@@ -39,6 +39,17 @@ return item.id===action.payload.id
         
             })
             decreasedproduct.quntity-=1
+
+// delete the product
+            if (decreasedproduct.quntity===0) {
+             const newArry=state.selectorproducts.filter((item)=>{
+return  item.id !== action.payload.id
+
+
+
+              })
+              
+            }
         
         
       
