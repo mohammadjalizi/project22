@@ -9,7 +9,7 @@ import { AddtoCart } from 'redux/MyData'
 
 const Store = () => {
   const { data, error, isLoading } = useGetproductsByNameQuery();
-
+  const {selectorproducts} = useSelector((state) => state.counter)
   const dispatch = useDispatch()
 
 
@@ -38,11 +38,14 @@ return(
             <img src={item.imageLink} alt="" />
 
             <div className='  pb-3 mt-14 flex justify-between'>
+             {selectorproducts.includes(item)?(
+  <button onClick={() => {
+    dispatch(AddtoCart(item))
+  }
+  }>AddtoCart</button>
+             ):   <h1>kasd</h1> }
 
-              <button onClick={() => {
-                dispatch(AddtoCart(item))
-              }
-              }>AddtoCart</button>
+            
 <p>   {item.price}   </p>
 
               </div>
