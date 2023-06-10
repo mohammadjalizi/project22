@@ -1,7 +1,7 @@
 import React from 'react'
  
 import { useSelector, useDispatch } from 'react-redux'
-import { decreaseProduct, increaseProduct } from 'redux/MyData'
+import { decreaseProduct, deletproduct, increaseProduct } from 'redux/MyData'
 const data=[{},{},{}]
 const Cart = () => {
     const {selectorproducts} = useSelector((state) => state.counter)
@@ -27,7 +27,10 @@ return(
 }
 } className= ' m-10  text-3xl '> +</button>
 
-<h1>delet</h1>
+<h1 onClick={() => {
+  dispatch(deletproduct(item))
+}
+}>delet</h1>
 
 <h1> {item.quntity}  </h1>
 <button onClick={(() => {

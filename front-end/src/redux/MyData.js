@@ -56,6 +56,7 @@ return  item.id !== action.payload.id
       
       },
       deletproduct: (state, action) => {
+        
         const newArry=state.selectorproducts.filter((item)=>{
           return  item.id !== action.payload.id
           
