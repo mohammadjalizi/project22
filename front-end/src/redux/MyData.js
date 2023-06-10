@@ -48,6 +48,7 @@ return  item.id !== action.payload.id
 
 
               })
+              state.selectorproducts=newArry
               
             }
         
