@@ -26,6 +26,9 @@ return(
   dispatch(increaseProduct(item))
 }
 } className= ' m-10  text-3xl '> +</button>
+
+<h1>delet</h1>
+
 <h1> {item.quntity}  </h1>
 <button onClick={(() => {
   dispatch(decreaseProduct(item))

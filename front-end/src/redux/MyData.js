@@ -55,10 +55,19 @@ return  item.id !== action.payload.id
         
       
       },
+      deletproduct: (state, action) => {
+        const newArry=state.selectorproducts.filter((item)=>{
+          return  item.id !== action.payload.id
+          
+          
+          
+                        })
+                        state.selectorproducts=newArry
+      },
   },
-  
+
 },)
 // Action creators are generated for each case reducer function
-export const { decreaseProduct, AddtoCart,increaseProduct, } = counterSlice.actions
+export const { deletproduct,decreaseProduct, AddtoCart,increaseProduct, } = counterSlice.actions
 
 export default counterSlice.reducer
