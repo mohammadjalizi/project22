@@ -25,7 +25,7 @@ state.selectorproducts.push(productWithQuntit)
         // state.value += action.payload
     const increasedproduct=state.selectorproducts.find((item)=>{
 
-return item.id===action.payload.id
+return item.id===2
 
     })
     increasedproduct.quntity+=1

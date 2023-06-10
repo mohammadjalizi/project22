@@ -23,12 +23,12 @@ return(
 <img  className=' max-w-xs '  src={item.imageLink} alt="" />
 <div  className=' ml-48 '>
 <button   onClick={() => {
-  dispatch(increaseProduct())
+  dispatch(increaseProduct(item))
 }
 } className= ' m-10  text-3xl '> +</button>
 <h1> {item.quntity}  </h1>
 <button onClick={(() => {
-  dispatch(decreaseProduct())
+  dispatch(decreaseProduct(item))
 }
 )} className='text-3xl'>-</button>
     </div>
