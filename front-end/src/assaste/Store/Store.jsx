@@ -38,29 +38,29 @@ return(
             <img src={item.imageLink} alt="" />
 
             <div className='  pb-3 mt-14 flex justify-between'>
-             {false?(
-<>
-<button onClick={() => {
-  dispatch(AddtoCart(item))
+             {selectorproductsMyid.includes(item.id) ?(
+ <>     <button   onClick={() => {
+  dispatch(increaseProduct(item))
 }
-}>  addtocart  </button>
-</>
+} className= ' m-10  text-3xl '> +</button>
+
+<h1 onClick={() => {
+  dispatch(deletproduct(item))
+}
+}>delet</h1>
+
+<h1>{selectorproductsMyid.quntity}</h1>
+<button onClick={(() => {
+  dispatch(decreaseProduct(item))
+}
+)} className='text-3xl'>-</button>  </>
              ) :  (
-           <>     <button   onClick={() => {
-            dispatch(increaseProduct(item))
-          }
-          } className= ' m-10  text-3xl '> +</button>
-          
-          <h1 onClick={() => {
-            dispatch(deletproduct(item))
-          }
-          }>delet</h1>
-          
-          <h1> dfasd </h1>
-          <button onClick={(() => {
-            dispatch(decreaseProduct(item))
-          }
-          )} className='text-3xl'>-</button>  </>
+              <>
+              <button onClick={() => {
+                dispatch(AddtoCart(item))
+              }
+              }>  addtocart  </button>
+              </>
              ) }
 
 
