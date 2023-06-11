@@ -49,7 +49,7 @@ return(
 }
 }>delet</h1>
 
-<h1>{selectorproductsMyid.quntity}</h1>
+<h1>{selectorproducts[index].quntity}</h1>
 <button onClick={(() => {
   dispatch(decreaseProduct(item))
 }
