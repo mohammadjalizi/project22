@@ -49,7 +49,14 @@ return  item.id !== action.payload.id
 
 
               })
+              const newArry2=state.selectorproductsMyid.filter((item)=>{
+                return  item.id !== action.payload.id
+                
+                
+                
+                              });
               state.selectorproducts=newArry
+              state.selectorproductsMyid=newArry2
               
             }
         

@@ -39,21 +39,23 @@ return(
 
             <div className='  pb-3 mt-14 flex justify-between'>
              {selectorproductsMyid.includes(item.id) ?(
- <>     <button   onClick={() => {
-  dispatch(increaseProduct(item))
-}
-} className= ' m-10  text-3xl '> +</button>
-
-<h1 onClick={() => {
-  dispatch(deletproduct(item))
-}
-}>delet</h1>
-
-<h1>{selectorproducts[index].quntity}</h1>
-<button onClick={(() => {
-  dispatch(decreaseProduct(item))
-}
-)} className='text-3xl'>-</button>  </>
+ <div  className=' ml-48 '>
+ <button   onClick={() => {
+   dispatch(increaseProduct(item))
+ }
+ } className= ' m-10  text-3xl '> +</button>
+ 
+ <h1 onClick={() => {
+   dispatch(deletproduct(item))
+ }
+ }>delet</h1>
+ 
+ <h1> {selectorproducts[index].quntity} </h1>
+ <button onClick={(() => {
+   dispatch(decreaseProduct(item))
+ }
+ )} className='text-3xl'>-</button>
+     </div> 
              ) :  (
               <>
               <button onClick={() => {
