@@ -56,7 +56,7 @@ return(
           }
           }>delet</h1>
           
-          <h1> 12  </h1>
+          <h1> dfasd </h1>
           <button onClick={(() => {
             dispatch(decreaseProduct(item))
           }
