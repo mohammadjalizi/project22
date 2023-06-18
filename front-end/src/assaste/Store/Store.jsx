@@ -12,7 +12,18 @@ const Store = () => {
   const {selectorproducts,selectorproductsMyid} = useSelector((state) => state.counter)
   const dispatch = useDispatch()
 
+const productQuntity=(itemApi)=>{
 
+const myproduct=selectorproducts.find((item)=>{
+
+return  itemApi.ip
+ 
+
+})
+return myproduct.quntity
+
+
+}
 
 
 if(isLoading){
